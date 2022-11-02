@@ -1,25 +1,31 @@
-# ReadMe
+
+function generateMarkdown(data) {
+  return `# ${data.title}
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Description](#Description)
 
 ## Description
-Generates a read me
+${data.Description}
 
 ## Installation
-Node.js
+${data.Installation}
 
 ## Usage
-Generates a read me
+${data.Usage}
 
 ## License 
-MIT
+${data.license}
 
 ## GitHub UserName
-dhelgoe
+${data.Username}
 
 ## Any Questions Contact:
-derek1896@gmail.com
+${data.Email}
 
 
+`;
+}
+
+module.exports = generateMarkdown;
